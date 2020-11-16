@@ -73,6 +73,7 @@ main p {
 	position: absolute;
 	left: calc(50% - 130px);
 	top: 80px;
+	animation: rotation 8s infinite linear;
 }
 
 #logo-background {
@@ -122,6 +123,15 @@ main p {
 	100% {
 		background-position: 0% 0%;
 	}
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 </style>
